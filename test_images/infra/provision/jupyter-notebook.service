@@ -1,0 +1,15 @@
+[Unit]
+Description=Jupyter Notebook
+
+[Service]
+Type=simple
+PIDFile=/run/jupyter.pid
+ExecStart=/home/ubuntu/anaconda3/bin/jupyter notebook --ip 0.0.0.0 --port ${jupyter_port}
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/home/ubuntu
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
