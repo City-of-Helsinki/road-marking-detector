@@ -1,6 +1,17 @@
 # Helsinki city: Detect pedestrian crossing
 This project is done in collaboration with the city of Helsinki to detect pedestrian crossing from the images
 
+## Get started with model recognizer
+
+```bash
+git clone https://github.com/fizyr/keras-retinanet.git
+python keras-retinanet/setup.py build_ext --inplace
+pip install jupyter pandas
+pip install -r keras-retinanet/requirements.txt
+cd keras-retinanet && pip install . --user && cd ..
+``
+
+
 ## Infrastructure
 For details about how to use it, please check [Infra](infra/README.md)
 
