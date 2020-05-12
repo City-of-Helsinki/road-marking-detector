@@ -1,8 +1,8 @@
-
 # %%
 from PIL import Image
 import os, numpy as np
 
+# TODO: #5 what files are these?
 folder = 'C:/Users/35841/images/phase2_crossroad_images_1/'
 filelist=os.listdir(folder)
 for fichier in filelist:
@@ -134,6 +134,7 @@ plt.show()
 
 
 # %%
+# TODO: add to requirements if required
 #!pip install mahalanobis
 
 
